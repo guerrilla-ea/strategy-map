@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Strategy Exporter
+Bundle-SymbolicName: com.redhat.ea.archimate.strategyexport;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: com.archimatetool.editor,
+ org.eclipse.core.jobs,
+ org.eclipse.osgi,
+ com.archimatetool.model,
+ org.eclipse.ui.workbench,
+ org.eclipse.jface
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: Red Hat Enterprise Architecture
+Import-Package: org.eclipse.core.runtime
+Export-Package: com.redhat.ea.archimate.strategyexport.util

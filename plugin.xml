@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="com.archimatetool.editor.exportHandler">
+      <exportHandler
+            class="com.redhat.ea.archimate.strategyexport.DotClusterExporter"
+            id="com.redhat.ea.archimate.strategyexport.DotClusterExporter"
+            label="Strategy Exporter (dot format)">
+      </exportHandler>
+   </extension>
+      <extension
+         point="com.archimatetool.editor.exportHandler">
+         <exportHandler
+            class="com.redhat.ea.archimate.strategyexport.ObjectivesExporter"
+            id="com.redhat.ea.archimate.strategyexport.ObjectivesExporter"
+            label="Objectives Exporter (html format)">
+      </exportHandler>
+   </extension>
+      <extension
+         point="com.archimatetool.editor.exportHandler">
+         <exportHandler
+            class="com.redhat.ea.archimate.basicexport.GraphExport"
+            id="com.redhat.ea.archimate.basicexport.GraphExport"
+            label="Cypher Query Language Export (cql)">
+      </exportHandler>
+   </extension>
+   <extension
+         point="com.archimatetool.editor.importHandler">
+      <importHandler
+            class="com.redhat.ea.archimate.strategyexport.EaUmlImporter"
+            id="com.redhat.ea.archimate.strategyexport.EaUmlImporter"
+            label="Strategy Importer (UML 2.4.1 format (xml))">
+      </importHandler>
+   </extension>
+
+</plugin>
